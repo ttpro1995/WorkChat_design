@@ -1,0 +1,47 @@
+html, body,
+.full-height {
+    height: 100%;
+}
+
+.row-md-1 {
+   height: 8.3%;
+}
+
+.row-2{
+	height: 16.67%;
+}
+
+.row-md-4 {
+	height: 33.3%;
+}
+
+.row-md-8{
+	height: 66.6%;
+}
+
+.row-10{
+	height: 83.33%;
+}
+
+
+.reading-area {
+  height: 100%;
+  overflow: scroll;  
+  overflow-x: hidden; 
+}
+
+
+/* style for panel */
+.left-panel{
+	background-color: #424242;
+	color: white;
+	overflow: scroll;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	overflow-x: hidden;
+}
+
+.chat-log-panel{
+	background-color: #F5F5F5;
+	font-family: 'Roboto Slab', serif;
+}
