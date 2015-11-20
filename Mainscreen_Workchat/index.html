@@ -44,15 +44,28 @@
                     </div>
                 </div>
                 </li>
-                <li>
-                    <a href="#">Mai Ho</a>
+                <li>          
+                      <!--<a href="#">Mai Ho</a>--> 
+               <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">   
+                <div class="row">
+                     <div class="col-xs-7"> Mai Ho</div>  
+                            <div class="col-xs-5"> <span class="glyphicon glyphicon-chevron-down"></span></div>
+                </div>
+                    </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Meow</a></li>
+                    <li><a href="#">Meow again</a></li>
+                </ul>
+             </div>
                 </li>
                 <li>
-                    <a href="#">People</a>
+                    <a id="people-header" href="#">People</a>
                     <ul id="people-entry"></ul>
                 </li>
                 <li>
-                    <a href="#">Team</a>
+                    <a id="group-header" href="#">Team</a>
                     <ul id="group-entry"></ul>
                 </li>
                 <li>
@@ -88,6 +101,7 @@
                         <a href="#open-sidebar">
                             <span  id="open-sidebar" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
                         </a>
+
                     </div>
                 </div>
             </div>

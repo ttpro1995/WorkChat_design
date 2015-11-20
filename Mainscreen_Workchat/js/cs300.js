@@ -10,14 +10,61 @@
 //place holder
 var people = ["Thien","Mai","Thib","Bao","Tri"];
 var group = ["Today lunch","Meow Work", "Fun"]
+
+
 //insert people
-for (i in people){
-	var formattedPeopleItem = HTMLpeopleItem.replace('%data%',people[i]);
-	$("#people-entry").append(formattedPeopleItem);
+var insertPeople = function(mPeople){
+		for (var i in mPeople){
+		var formattedPeopleItem = HTMLpeopleItem.replace('%data%',mPeople[i]);
+		$("#people-entry").append(formattedPeopleItem);
+	}
 }
+insertPeople(people);
 
 //group
-for (i in group){
-	var formattedGroupItem = HTMLgroupItem.replace('%data%',group[i]);
-	$("#group-entry").append(formattedGroupItem);
+var insertGroup = function(mGroup){
+		for (var i in mGroup){
+		var formattedGroupItem = HTMLgroupItem.replace('%data%',mGroup[i]);
+		$("#group-entry").append(formattedGroupItem);
+	}
 }
+insertGroup(group);
+
+
+var removePeople = function(){
+	$('#people-entry').children().remove();
+}
+
+
+
+var removeGroup = function(){
+	$('#group-entry').children().remove();
+}
+
+
+//event click on people header
+   $("#people-header").click(function(e) {
+        e.preventDefault();
+       var child = $('#people-entry').children();
+       console.log("people child length "+child.length);
+       if (child.length==0){
+       	insertPeople(people);
+       }
+       else{
+       	removePeople();
+       }
+    });
+
+//event click on group header 
+   $("#group-header").click(function(e) {
+        e.preventDefault();
+       var child = $('#group-entry').children();
+       console.log("people child length "+child.length);
+       if (child.length==0){
+       	insertGroup(group);
+       }
+       else{
+       	removeGroup();
+       }
+    });
+ 
