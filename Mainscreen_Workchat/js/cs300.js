@@ -41,6 +41,18 @@ var removeGroup = function(){
 	$('#group-entry').children().remove();
 }
 
+/*make the circle become green */
+var setStatus = function(isOnline, aItem){
+    var mListItem = aItem.parent();
+    if (isOnline){
+        mListItem.addClass("toggledOnline");
+    }
+    else{
+        mListItem.removeClass("toggledOnline");
+    }
+}
+
+
 
 //event click on people header
    $("#people-header").click(function(e) {
@@ -49,6 +61,10 @@ var removeGroup = function(){
        console.log("people child length "+child.length);
        if (child.length==0){
        	insertPeople(people);
+           $("#people-entry").click(function(event) {
+    setStatus(true,event.target);
+    console.log("meow click people entry")
+});
        }
        else{
        	removePeople();
@@ -67,4 +83,9 @@ var removeGroup = function(){
        	removeGroup();
        }
     });
- 
+
+
+$("#people-entry").click(function(event) {
+    setStatus(true,$(event.target));
+    console.log("meow click people entry")
+});

@@ -27,7 +27,7 @@
 	font-weight: 700;/*bold*/
 }
 
-li .toggledOnline{
+.toggledOnline{
 	color: green;
-  font-size: 20px;
+	font-weight: 400;
 }
