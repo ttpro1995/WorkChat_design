@@ -97,11 +97,24 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <a href="#open-sidebar">
+                    <div class="col-lg-8 col-md-8 col-xs-8">
+                        <a href="#open-sidebar row-1">
                             <span  id="open-sidebar" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
                         </a>
-
+                    <!---->
+                        <div class="row-8">
+                            <div id="chatroom" class="reading-area full-height">
+                                <!-- insert chatlog here-->
+                            </div>
+                        </div>
+                        <div class="row-2 full-height">
+                            <!-- insert textbox and send button here-->
+                            <div class="row">
+                            <textarea id="text-box" class="col-lg-10 col-md-10 col-xs-10" cols="5" rows="5"></textarea>
+                            <input id="submitMessage" type="submit" class="btn btn-info col-lg-2 col-md-2 col-xs-2" value="Submit Button">
+                            </div>
+                        </div>
+                    <!-- -->        
                     </div>
                 </div>
             </div>
@@ -116,6 +129,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- cs300-function script -->
+    <script src = "js/cs300-function.js"></script>
 
     <!-- cs300 script-->
     <script src = "js/cs300.js"></script>

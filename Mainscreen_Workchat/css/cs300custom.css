@@ -19,6 +19,8 @@
 	 text-align: right;
 }
 
+.side
+
 .group-item{
 	font-weight: 700;/*bold*/
 }
@@ -28,6 +30,35 @@
 }
 
 .toggledOnline{
-	color: green;
+	color: #00E6E6;
 	font-weight: 400;
+}
+
+.reading-area {
+  overflow: scroll;  
+  overflow-x: hidden; 
+}
+
+.row-1{
+	height: 8.33vh;
+}
+
+.row-8{
+	height: 66.66vh;
+}
+
+.row-2{
+	height: 16.66vh;
+}
+
+.full-height{
+	height: 100%;
+}
+
+.red-box{
+	background: red;
+}
+
+.blue-box{
+	background: blue;
 }
