@@ -57,15 +57,45 @@ var clearChatLog = function(){
 	chatroom.empty();
 }
 
-var submitMessage= function(){
+/*
+submitMessage= function(){
 	var message = $('#text-box').val();
+	var name = "Meow";
 	console.log("send message "+message);
 	$('#text-box').val('');//clean textarea
 	
 	//do something more
-	insertChatLog('<br>'+message);//debug: print on screen
+	//submit to server
+	
+
+	//debug
+	receiveMessage(name,message);
+	
+}
+$.fn.exists = function () {
+    return this.length !== 0;
+}
+receiveMessage = function(name, content){
+	
+	//find from same sender
+	var old = $('.chat-bubble#'+name+":last");
+	var old_content = old.children('.chat-content');
+	var old_string = old_content.html();
+	console.log("receive  " + old_content.html());
+	
+	//display
+	if (!old_string){
+	var formattedMessage = createChatbubble("Meow",content);
+	insertChatLog('<br>'+formattedMessage);//debug: print on screen
+	}
+	else{
+		var newContent = old_content.html()+content;
+		old.remove();
+		var formattedMessage = createChatbubble("Meow",newContent);
+	insertChatLog('meow'+formattedMessage);//debug: print on screen
+	}
 	
 	//scroll to bottom
 	var d = $('#chatroom');
 	d.scrollTop(d.prop("scrollHeight"));
-}
+}*/

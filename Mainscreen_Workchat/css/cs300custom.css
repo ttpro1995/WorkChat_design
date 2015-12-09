@@ -29,6 +29,18 @@
 	font-weight: 700;/*bold*/
 }
 
+.chat-bubble{
+	border-radius: 25px;
+    background: #BBDEFB;
+    padding: 10px;  
+}
+
+.chat-name{
+	font-weight: 700;/*bold*/
+}
+
+
+
 .toggledOnline{
 	color: #00E6E6;
 	font-weight: 400;
