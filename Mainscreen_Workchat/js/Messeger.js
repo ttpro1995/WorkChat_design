@@ -1,6 +1,7 @@
-function MessageManager(){
+function MessageManager(){//constructor of class MessageManager
 	
-this.receiveMessage = function(name, content){
+	
+this.receiveMessage = function(name, content){//receive and display on screen
 	//find from same sender
 	var old = $('.chat-bubble:last');
 	var checker = false;
@@ -28,7 +29,7 @@ this.receiveMessage = function(name, content){
 	var d = $('#chatroom');
 	d.scrollTop(d.prop("scrollHeight"));
 }
-this.submitMessage= function(){
+this.submitMessage= function(){//submit message to server
 	var message = $('#text-box').val();
 	var name = "Meow";
 	console.log("send message "+message);
@@ -38,8 +39,8 @@ this.submitMessage= function(){
 	//submit to server
 	
 
-	//debug
-	MessageManager.receiveMessage(name,message);
+	//debug: display on screen again
+	this.receiveMessage(name,message);
 	
 }
 }

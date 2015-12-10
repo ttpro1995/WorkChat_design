@@ -60,5 +60,6 @@ $("#people-entry").click(function(event) {
 });
 
 $("#submitMessage").click(function(event){
-    MessageManager.submitMessage();
+    var mesManager = new MessageManager();
+    mesManager.submitMessage();
 })
