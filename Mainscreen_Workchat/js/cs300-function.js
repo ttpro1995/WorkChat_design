@@ -57,6 +57,7 @@ var clearChatLog = function(){
 	chatroom.empty();
 }
 
+
 /*
 submitMessage= function(){
 	var message = $('#text-box').val();

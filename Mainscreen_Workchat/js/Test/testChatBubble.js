@@ -11,6 +11,9 @@ manager.receiveMessage("User_meow","Let's eat");
 manager.receiveMessage("User_meow","And MEOWWWWWWW");
 manager.receiveMessage("User_meow","Meow");
 manager.receiveMessage("User_woof","meow ?");
+manager.receiveMessage("abc","meow meow ?");
+manager.receiveMessage("abc","meow meow ?");
+manager.receiveMessage("abc","meow meow ?");
 }
 
 testcase1();

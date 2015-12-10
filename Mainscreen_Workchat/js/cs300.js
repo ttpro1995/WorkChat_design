@@ -63,3 +63,14 @@ $("#submitMessage").click(function(event){
     var mesManager = new MessageManager();
     mesManager.submitMessage();
 })
+
+var enterKeyListener = function(){
+     var key = window.event.keyCode;
+      if (key == 13) {
+        var mesManager = new MessageManager();
+        mesManager.submitMessage();
+    }
+    else {
+        return true;
+    }
+}
