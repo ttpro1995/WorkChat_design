@@ -59,6 +59,10 @@
 	height: 66.66vh;
 }
 
+.row-9{
+	height: 75vh;
+}
+
 .row-2{
 	height: 16.66vh;
 }
@@ -67,10 +71,18 @@
 	height: 100%;
 }
 
+.full-min-height{
+	min-height: 100%;
+}
+
 .red-box{
 	background: red;
 }
 
 .blue-box{
 	background: blue;
+}
+
+.chat-widget-group{
+	height: 10vh;
 }

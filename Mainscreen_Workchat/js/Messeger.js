@@ -1,3 +1,4 @@
+var chatLogUI= new chatLogUI();
 function MessageManager(){//constructor of class MessageManager
 	
 	
@@ -16,13 +17,13 @@ this.receiveMessage = function(name, content){//receive and display on screen
 	//display
 	if (!checker){
 	var formattedMessage = createChatbubble(name,content);
-	insertChatLog('<br>'+formattedMessage);//debug: print on screen
+	chatLogUI.insertChatLog('<br>'+formattedMessage);//debug: print on screen
 	}
 	else{
 		var newContent = old_content.html()+content;
 		old.remove();
 		var formattedMessage = createChatbubble(name,newContent);
-	insertChatLog(formattedMessage);//debug: print on screen
+	chatLogUI.insertChatLog(formattedMessage);//debug: print on screen
 	}
 	
 	//scroll to bottom

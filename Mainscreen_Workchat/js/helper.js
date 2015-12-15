@@ -27,3 +27,7 @@ var createChatbubble  = function(name,content){
 	formattedStart = formattedStart.replace('%user_name%',name);
 	return formattedStart;
 }
+
+var getID = function(isOnline){
+    return isOnline.parent().attr('id')
+	};
