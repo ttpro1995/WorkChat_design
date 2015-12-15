@@ -1,0 +1,92 @@
+#close-sidebar {
+	display: inline;
+}
+
+#open-sidebar{
+	color: #00E6E6;
+	font-size: 18px;
+}
+
+#people-entry {
+	color: #999999;
+}
+
+#group-entry {
+	color: #999999;
+}
+
+.caret{
+	 text-align: right;
+}
+
+.side
+
+.group-item{
+	font-weight: 700;/*bold*/
+}
+
+.people-item{
+	font-weight: 700;/*bold*/
+}
+
+.chat-bubble{
+	border-radius: 25px;
+    background: #BBDEFB;
+    padding: 10px;  
+}
+
+.chat-name{
+	font-weight: 700;/*bold*/
+}
+
+
+
+.toggledOnline{
+	color: #00E6E6;
+	font-weight: 400;
+}
+
+.reading-area {
+  overflow: scroll;  
+  overflow-x: hidden; 
+}
+
+.row-1{
+	height: 8.33vh;
+}
+
+.row-8{
+	height: 66.66vh;
+}
+
+.row-9{
+	height: 75vh;
+}
+
+.row-2{
+	height: 16.66vh;
+}
+
+.full-height{
+	height: 100%;
+}
+
+.full-min-height{
+	min-height: 100%;
+}
+
+.red-box{
+	background: red;
+}
+
+.blue-box{
+	background: blue;
+}
+
+.chat-widget-group{
+	height: 10vh;
+}
+
+.hide-horizontal-scroll{
+	overflow-x: hidden;
+}
