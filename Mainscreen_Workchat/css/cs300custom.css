@@ -86,3 +86,7 @@
 .chat-widget-group{
 	height: 10vh;
 }
+
+.hide-horizontal-scroll{
+	overflow-x: hidden;
+}

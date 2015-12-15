@@ -28,16 +28,16 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper" class="hide-horizontal-scroll">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                <div class="container-fluid">
-                   <div class="row">
-                    <a class="col-xs-9" href="#">
+                <div class="">
+                   <div class="">
+                    <a class="col-xs-8" href="#">
                         CS300
                     </a>
                     <div class="close-sidebar">
-                    <a class="col-xs-3" href="#" id="menu-toggle-close">
+                    <a class="col-xs-1" href="#" id="menu-toggle-close">
                       <span id ="close-sidebar" class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                     </a>
                     </div>
@@ -94,10 +94,10 @@
 
 
         <!-- Page Content -->
-        <div id="page-content-wrapper">
+        <div id="page-content-wrapper col-lg-8 col-md-8 col-xs-8">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-9 col-md-9 col-xs-9">
+                    <div class="col-lg-11 col-md-11 col-xs-11">
                         <a href="#open-sidebar row-1">
                             <span  id="open-sidebar" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
                         </a>
@@ -110,12 +110,11 @@
                         </div>
                         <div class="row-1 full-height">
                             <!-- insert textbox and send button here-->
+                            <div class="container-fluid">
                             <div class="row">
-                            
                             <textarea id="text-box" class="chat-widget-group col-lg-10 col-md-10 col-xs-10" cols="5" rows="1" onkeypress="enterKeyListener();"></textarea>
                             <input id="submitMessage" type="submit" class="chat-widget-group btn btn-info col-lg-2 col-md-2 col-xs-2" value="Send">
-                           
-                         
+                            </div>
                             </div>
                         </div>
                     </div>
