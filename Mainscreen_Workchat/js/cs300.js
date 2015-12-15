@@ -14,6 +14,7 @@ var chatlog1 = "Chat log 1 goes here";
 var chatlog2 = "Chat log 2 goes here: meow";
 var leftPanerUI = new LeftPanerUI();
 var chatLogUI = new ChatLogUI();
+var utility = new Utility();
 leftPanerUI.insertPeople(people);//fill people
 leftPanerUI.insertGroup(group);//fill group
 chatLogUI.insertChatLog(chatlog1);
@@ -51,7 +52,7 @@ chatLogUI.insertChatLog(chatlog1);
 
 $("#people-entry").click(function(event) {
     leftPanerUI.setStatus(true,$(event.target));
-    var itemID = getID($(event.target));
+    var itemID = utility.getID($(event.target));
     if (itemID=='people1'){
         chatLogUI.clearChatLog();
         chatLogUI.insertChatLog(chatlog1);

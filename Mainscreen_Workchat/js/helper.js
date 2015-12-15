@@ -19,15 +19,3 @@ var HTMLchatName = '<div class="chat-name">%data%:</div>'
 var HTMLchatContentStart = '<div class="chat-content">%data%</div>'
 var HTMLchatContentItem = '%data%<br>'
 
-var createChatbubble  = function(name,content){
-	var formattedContentItem = HTMLchatContentItem.replace('%data%',content);
-	var formattedContentStart = HTMLchatContentStart.replace("%data%",formattedContentItem);
-	var formattedName = HTMLchatName.replace('%data%',name);
-	var formattedStart = HTMLchatbubbleStart.replace('%data%',formattedName+formattedContentStart);
-	formattedStart = formattedStart.replace('%user_name%',name);
-	return formattedStart;
-}
-
-var getID = function(isOnline){
-    return isOnline.parent().attr('id')
-	};
