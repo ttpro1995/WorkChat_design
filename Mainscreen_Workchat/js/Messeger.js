@@ -34,8 +34,12 @@ this.receiveMessage = function(name, content){//receive and display on screen
 this.submitMessage= function(){//submit message to server
 	var message = $('#text-box').val();
 	var name = "Meow";
-	console.log("send message "+message);
-	$('#text-box').val('');//clean textarea
+	console.log("send message:'"+message+"' end message");
+	$('#text-box').val(null);//clean textarea
+	
+	if (message=="" || message=="\n"){
+		return;
+	}
 	
 	//do something more
 	//submit to server
@@ -43,6 +47,5 @@ this.submitMessage= function(){//submit message to server
 
 	//debug: display on screen again
 	this.receiveMessage(name,message);
-	
 }
 }

@@ -78,3 +78,9 @@ var enterKeyListener = function(){
         return true;
     }
 }
+
+var submitTextarea = function(){
+    console.log('onsubmit');
+      var mesManager = new MessageManager();
+        mesManager.submitMessage();
+}
