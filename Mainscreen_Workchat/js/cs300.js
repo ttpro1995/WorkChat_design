@@ -68,8 +68,9 @@ $("#submitMessage").click(function(event){
     mesManager.submitMessage();
 })
 
-var enterKeyListener = function(){
-     var key = window.event.keyCode;
+var enterKeyListener = function(e){
+    var evt = e || window.event;
+     var key = evt.keyCode;
       if (key == 13) {
         var mesManager = new MessageManager();
         mesManager.submitMessage();
