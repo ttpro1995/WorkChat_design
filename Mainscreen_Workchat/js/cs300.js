@@ -68,6 +68,11 @@ $("#submitMessage").click(function(event){
     mesManager.submitMessage();
 })
 
+$('#close_dialog').click(function(event){
+    var dialogManager = new DialogManager();
+    dialogManager.close();
+})
+
 var enterKeyListener = function(e){
     var evt = e || window.event;
      var key = evt.keyCode;

@@ -18,4 +18,6 @@ var HTMLchatbubbleStart = '<div class ="chat-bubble" id ="%user_name%">%data%</d
 var HTMLchatName = '<div class="chat-name">%data%:</div>'
 var HTMLchatContentStart = '<div class="chat-content">%data%</div>'
 var HTMLchatContentItem = '%data%<br>'
+var HTMLcheckbox = '<input type="checkbox" name="people_name" value="%data1%" checked> %data2%'
 
+var HTMLdialog = "<div id = 'box' class='white_content'> This is a box </div>"
